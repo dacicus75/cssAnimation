@@ -65,3 +65,12 @@
     width: 35px;
     float: right;
 }
+.content{
+    width: 300px;
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 2;
+}
