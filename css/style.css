@@ -105,4 +105,33 @@
 }
 #clouds{
     width: 100%;
+    position: absolute;
+    left: 0;
+    top: 100px;
 }
+#airplane{
+    width: 200px;
+    position: absolute;
+    top: 180px;
+    left: 250px;
+    z-index: 2;
+}
+#hotairbaloon{
+    height: 400px;
+    width: 700px;
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.baloon1{
+    width: 150px;
+    opacity: 0.4;
+} 
+.baloon2{
+    width: 350px;
+} 
+.baloon3{
+    width: 180px;
+    opacity: 0.5;
+} 
