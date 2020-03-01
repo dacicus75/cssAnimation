@@ -51,9 +51,25 @@
                 <img src="css/img/hotAirBaloon.png" class="baloon3">
             </div>
             <img src="css/img/pause.png" id="pauseImg">
-
         </div>
         
-        <!-- <script src="" async defer></script> -->
+        <script>
+            var pauseImg = document.getElementById("pauseImg");
+            pauseImg.onclick = function(){
+                if(clouds.style.webkitAnimationPlayState == "paused");
+                {
+                    clouds.style.webkitAnimationPlayState == "running";
+                    airplane.style.webkitAnimationPlayState == "running";
+                    hotairballoon.style.webkitAnimationPlayState == "running"; 
+                    pauseImg.src = "css/img/pause.png";              
+                }
+                else {
+                    clouds.style.webkitAnimationPlayState == "paused";
+                    airplane.style.webkitAnimationPlayState == "paused";
+                    hotairballoon.style.webkitAnimationPlayState == "paused";
+                    pauseImg.src = "css/img/play.png"; 
+                }
+            }
+        </script> 
     </body>
 </html>
