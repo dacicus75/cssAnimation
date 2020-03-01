@@ -107,14 +107,44 @@
     width: 100%;
     position: absolute;
     left: 0;
-    top: 100px;
+    top: -100px;
+    animation: clouds 5s linear infinite;
+}
+@keyframes clouds{
+    0%{
+        top: -100px;
+    }
+    20%{
+        top: 100px;
+    }
+    80%{
+        top: 100px;
+    }
+    100%{
+        top: -100px;
+    }
 }
 #airplane{
     width: 200px;
     position: absolute;
     top: 180px;
-    left: 250px;
+    left: -250px;
     z-index: 2;
+    animation: fly 5s linear infinite;
+}
+@keyframes fly{
+    0%{
+        left: -250px;
+    }
+    20%{
+        left: 250px;
+    }
+    80%{
+        left: 250px;
+    }
+    100%{
+        left: 110%;
+    }
 }
 #hotairbaloon{
     height: 400px;
