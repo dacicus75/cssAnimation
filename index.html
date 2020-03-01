@@ -28,10 +28,13 @@
                             <li><a href="#">Services</a></li>
                             <li><a href="#">About</a></li>                     
                         </ul>
+                        <div class="menu-icon">
+                            <img src="css/img/menu.png">
+                        </div>  
                     </div>
-                    <div class="menu-icon">
-                        <img src="css/img/menu-icon-png-3-lines-11552739327ppx0vqjddk.png">
-                    </div>              
+                    <!-- <div class="menu-icon">
+                        <img src="css/img/menu.png">
+                    </div>               -->
                 </nav>
             </div>
             <div class="content">
@@ -55,18 +58,19 @@
         
         <script>
             var pauseImg = document.getElementById("pauseImg");
+
             pauseImg.onclick = function(){
-                if(clouds.style.webkitAnimationPlayState == "paused");
+                if(clouds.style.webkitAnimationPlayState == "paused")
                 {
-                    clouds.style.webkitAnimationPlayState == "running";
-                    airplane.style.webkitAnimationPlayState == "running";
-                    hotairballoon.style.webkitAnimationPlayState == "running"; 
+                    clouds.style.webkitAnimationPlayState = "running";
+                    airplane.style.webkitAnimationPlayState = "running";
+                    hotairbaloon.style.webkitAnimationPlayState = "running"; 
                     pauseImg.src = "css/img/pause.png";              
                 }
                 else {
-                    clouds.style.webkitAnimationPlayState == "paused";
-                    airplane.style.webkitAnimationPlayState == "paused";
-                    hotairballoon.style.webkitAnimationPlayState == "paused";
+                    clouds.style.webkitAnimationPlayState = "paused";
+                    airplane.style.webkitAnimationPlayState = "paused";
+                    hotairbaloon.style.webkitAnimationPlayState = "paused";
                     pauseImg.src = "css/img/play.png"; 
                 }
             }
